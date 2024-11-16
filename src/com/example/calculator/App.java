@@ -54,6 +54,8 @@ public class App {
             if(Objects.equals(input3, "exit")){
                 System.out.println("계산을 종료합니다!");
                 break;
+            }else {
+                System.out.println("처음부터 다시 계산합니다!");
             }
         }
 
