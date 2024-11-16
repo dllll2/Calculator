@@ -3,7 +3,7 @@ package com.example.calculator;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class Calculator {
+public class App {
     public static void main(String[] args) {
         int firstNum = 0;
         int secondNum = 0;
