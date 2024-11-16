@@ -8,7 +8,7 @@ public class Calculator {
         int firstNum = 0;
         int secondNum = 0;
         double result = 0.0;
-        char operator = ' ';
+        char operator;
 
         Scanner sc = new Scanner(System.in);
 
