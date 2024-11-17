@@ -5,10 +5,7 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-        int firstNum = 0;
-        int secondNum = 0;
-        double result = 0.0;
-        char operator;
+        Calculator cal = new Calculator();
 
         Scanner sc = new Scanner(System.in);
 
@@ -16,49 +13,70 @@ public class App {
             System.out.println("첫 번째 숫자를 입력하세요");
             int input1 = sc.nextInt();
             if (input1 >= 0) {
-                firstNum = input1;
+                cal.setFirstNum(input1);
             }
 
             System.out.println("두 번째 숫자를 입력하세요");
             int input2 = sc.nextInt();
             if (input2 > 0) {
-                secondNum = input2;
+                cal.setSecondNum(input2);
+            } else {
+                System.out.println("나눗셈 연산에서 분모(두 번째 정수)에 0이 입력될 수 없습니다. 다시 입력해주세요.");
+                continue; // 처음으로 돌아가기
             }
 
-            System.out.println("사칙 연산 기호를 입력하세요");
-            operator = sc.next().charAt(0);
+            System.out.println("사칙 연산 기호를 입력하세요 (+, -, *, /)");
+            char operator = sc.next().charAt(0);
+            if ("+-*/".indexOf(operator) == -1) {
+                System.out.println("올바르지 않은 연산자입니다. 다시 입력해주세요.");
+                continue; // 처음으로 돌아가기
+            }
+            cal.setOperator(operator);
 
-            if (input2 == 0) {
-                System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될수 없습니다.");
-            }
-            
-            switch (operator) {
-                case '+':
-                    result = firstNum + secondNum;
-                    break;
-                case '-':
-                    result = firstNum - secondNum;
-                    break;
-                case '*':
-                    result = firstNum * secondNum;
-                    break;
-                case '/':
-                    result = (double) firstNum / secondNum;
-                    break;
-                default:
-                    System.out.println("잘못된 연산자를 입력하였습니다!");
-            }
-            System.out.println("결과: " + result);
-            System.out.print("더 계산하시겠습니까? exit 입력시 종료");
-            String input3 = sc.nextLine();
-            if(Objects.equals(input3, "exit")){
-                System.out.println("계산을 종료합니다!");
-                break;
-            }else {
-                System.out.println("처음부터 다시 계산합니다!");
+            cal.calculate(cal.getFirstNum(), cal.getSecondNum(), cal.getOperator());
+            System.out.println("결과: " + cal.getResult());
+
+            while (true) {
+                System.out.println("더 계산하시겠습니까? [Y/N]");
+                System.out.println("계산 종료: exit");
+                System.out.println("기록 보기: 기록");
+                System.out.println("기록 삭제: 삭제");
+
+                String input3 = sc.next();
+                switch (input3) {
+                    case "exit":
+                        System.out.println("계산을 종료합니다.");
+                        return; // 프로그램 종료
+                    case "기록":
+                        if (cal.getResultList().isEmpty()) {
+                            System.out.println("저장된 기록이 없습니다.");
+                        } else {
+                            for (int i = 0; i < cal.getResultList().size(); i++) {
+                                System.out.println("[" + i + "] 번째: " + cal.getResultList().get(i));
+                            }
+                        }
+                        continue; // inner while로 돌아가기
+                    case "삭제":
+                        System.out.println("몇 번째 계산 기록을 삭제하겠습니까?");
+                        int index = sc.nextInt();
+                        if (index < 0 || index >= cal.getResultList().size()) {
+                            System.out.println("잘못된 인덱스입니다. 다시 시도해주세요.");
+                        } else {
+                            cal.removeResult(index);
+                            System.out.println(index + "번 계산 기록이 삭제되었습니다.");
+                        }
+                        continue; // inner while로 돌아가기
+                    case "Y":
+                        System.out.println("다음 계산을 준비합니다...");
+                        break; // outer while로 돌아가기
+                    case "N":
+                        System.out.println("계산을 종료합니다.");
+                        return; // 프로그램 종료
+                    default:
+                        System.out.println("올바르지 않은 입력입니다. 다시입력해주세요.");
+                        return; // 프로그램 종료
+                }break;
             }
         }
-
-
     }
 }
