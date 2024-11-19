@@ -1,6 +1,7 @@
 package com.example.calculator;
 
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 public class App {
@@ -33,6 +34,7 @@ public class App {
                     System.out.println("2. 계산 종료");
                     System.out.println("3. 기록 보기");
                     System.out.println("4. 기록 삭제");
+                    System.out.println("5. 큰수 출력");
 
                     String input = sc.next();
 
@@ -57,6 +59,13 @@ public class App {
                             for(int i = 0; i < cal.getResultList().size(); i++){
                                 System.out.println("["+ (i+1) +"]" + cal.getResultList().get(i));
                             }
+                            continue;
+                        case "5":
+                            System.out.println("숫자를 입력하세요 : ");
+                            double inputValue = sc.nextDouble();
+                            List<Double> biggerValues = cal.biggerValue(inputValue);
+                            System.out.println("입력한 값보다 큰 값은");
+                            System.out.println(biggerValues + "입니다.");
                             continue;
                         default:
                             System.out.println("다시 입력해주세요!!"); continue;

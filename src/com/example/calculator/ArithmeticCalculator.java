@@ -56,6 +56,13 @@ public class ArithmeticCalculator<T extends Number> {
         return result;
     }
 
+    // 입력받은 값보다 큰수 출력하는 메서드
+    // stream() 사용
+    public List<Double> biggerValue(double inputValue){
+        List<Double> biggerValues = resultList.stream().filter((value -> value > inputValue)).toList();
+        return biggerValues;
+    }
+
 }
 
 
