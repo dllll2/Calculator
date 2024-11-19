@@ -10,19 +10,23 @@ public class App {
         while(true){
             try{
                 System.out.println("첫 번째 숫자를 입력하세요 : ");
-                int firstNum = sc.nextInt();
+                double firstNum = sc.nextDouble();
 
                 System.out.println("두 번째 숫자를 입력하세요 : ");
-                int secondNum = sc.nextInt();
+                double secondNum = sc.nextDouble();
 
                 System.out.println("연산자를 입력하세요 (+, -, *, /) : ");
                 char operator = sc.next().charAt(0);
 
-                Calculator cal = new Calculator(firstNum, secondNum, operator);
-                double result = cal.calculator();
+                OperatorType operatorType = OperatorType.toOperatorType(operator);
+
+                ArithmeticCalculator cal = new ArithmeticCalculator(firstNum, secondNum, operatorType);
+                double result = cal.calculate();
+//                Calculator cal = new Calculator(firstNum, secondNum, operator);
+//                double result = cal.calculator();
 
                 System.out.println("결과 : " + result);
-                
+
                 while(true){
                     System.out.println("\n 무엇을 할까요?");
                     System.out.println("1. 더 계산하기");
