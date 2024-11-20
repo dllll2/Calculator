@@ -15,10 +15,14 @@
 >>  + ## **App.java**<br>
 >>  ![LV2_App](https://github.com/user-attachments/assets/7bca3e16-5888-44ed-ba00-3aa3674fc968)
 >
-> ## LV3 Enum, 제네릭, 람다 & 스트림 적용
-> + ## **OperatorType.java**<br>
->![LV3_OperatorType](https://github.com/user-attachments/assets/dc5bfa95-47f0-4a1e-a815-2111cb8993e4)
-> + ## **ArithmeticCalculator.java**<br>
->![LV3_ArithmeticCalculator](https://github.com/user-attachments/assets/1769aea1-aee0-4a02-9ea6-265f2d6b264a)
-> + ## **App.java**<br>
->![LV3_Apppng](https://github.com/user-attachments/assets/469d885f-8607-4e4c-8ac5-f99bf9daaff0)
+>> ## LV3 Enum, 제네릭, 람다 & 스트림 적용
+>> + ## **OperatorType.java**<br>
+>> Enum 클래스에 계산을 진행하는 calculate 추상 메소드를 구현
+>>![LV3_OperatorType](https://github.com/user-attachments/assets/dc5bfa95-47f0-4a1e-a815-2111cb8993e4)
+>
+>> + ## **ArithmeticCalculator.java**<br>
+>> 람다, 스트림으로 입력받은 값보다 큰수를 출력하는 biggerValue() 메서드 구현
+>>![LV3_ArithmeticCalculator](https://github.com/user-attachments/assets/1769aea1-aee0-4a02-9ea6-265f2d6b264a)
+>
+>> + ## **App.java**<br>
+>>![LV3_Apppng](https://github.com/user-attachments/assets/469d885f-8607-4e4c-8ac5-f99bf9daaff0)
