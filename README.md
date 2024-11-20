@@ -10,11 +10,19 @@
 > ## LV2 클래스를 적용해 기본적인 연산을 수행할 수 있는 계산기
 >>  + ## **Calculator.java**<br>
 >>   <details>
->>   <summary>
->>   calculator() 메소드를 통해서 계산을 진행하고 결과값을 resultList에 저장.<br>
->>   getResultList() getter메소드를 통해서 결과값이 저장된 resultList의 복사본을 반환한다.<br>
->>   removeResult() 메소드를 통해서 리스트의 값을 삭제한다
->>   </summary>
+>>   <summary>calculator() 메소드를 통해서 계산을 진행하고 결과값을 resultList에 저장.<br></summary>
+>>   ![LV2_calculator()](https://github.com/user-attachments/assets/603e7204-bba8-46ee-93a1-128462526caf)
+>>  </details>
+>>  <details>
+>>   <summary>getResultList() getter메소드를 통해서 결과값이 저장된 resultList의 복사본을 반환한다.<br></summary>
+>>
+>>  ![LV2_gerResultList()](https://github.com/user-attachments/assets/7d913310-3dbd-432b-8b56-0b7bbd7191ac)
+>>   </details>
+>>   <details>
+>>  <summary>removeResult() 메소드를 통해서 리스트의 값을 삭제한다</summary>
+>>
+>>  ![LV2_removeResult()](https://github.com/user-attachments/assets/cbf279ba-6882-4869-bc96-3e377152c08b)
+>> </details>
 >>
 >>   ![LV2_Calculator](https://github.com/user-attachments/assets/d29305ad-7592-463e-ab9c-d0c1f03fe25c)
 >>   </details>
