@@ -1,4 +1,4 @@
-package com.example.calculator;
+package com.example.calculator.LV2;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -24,7 +24,7 @@ public class App {
                 System.out.println("결과 : " + result);
                 
                 while(true){
-                    System.out.println("\n 무엇을 할까요?");
+                    System.out.println("\n 무엇을 할까요? (숫자를 입력해주세요)");
                     System.out.println("1. 더 계산하기");
                     System.out.println("2. 계산 종료");
                     System.out.println("3. 기록 보기");
@@ -60,7 +60,6 @@ public class App {
                 }
 
             }catch (InputMismatchException e){
-                System.out.println("에러: " + e.getMessage());
                 System.out.println("정수를 입력해주세요!!!!!\n");
                 sc.next();
             } catch (IllegalArgumentException e) {
