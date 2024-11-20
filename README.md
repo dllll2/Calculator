@@ -55,8 +55,7 @@
 >><details>
 >> <summary>람다, 스트림으로 입력받은 값보다 큰수를 출력하는 biggerValue() 메서드 구현</summary>
 >>
->>![LV3_LambdaAndStream_biggerValue()](https://github.com/user-attachments/assets/c365516d-f6e9-47d8-9574-ab30de9ef9e7)
-279ba-6882-4869-bc96-3e377152c08b)
+>>![LV3_LambdaAndStream_biggerValue()](https://github.com/user-attachments/assets/44a38a56-ca02-4ba8-8ae0-02685a2bb0db)
 >></details>
 >>  <details>
 >>  <summary>ArithmeticCalculator.java 전체 코드</summary>
