@@ -51,11 +51,6 @@ public class ArithmeticCalculator<T extends Number> {
         resultList.remove(index);
     }
 
-    // 마지막으로 계산한 결과 가져오는 메서드
-    public double lastResult(){
-        return result;
-    }
-
     // 입력받은 값보다 큰수 출력하는 메서드
     // stream() 사용
     public List<Double> biggerValue(double inputValue){
