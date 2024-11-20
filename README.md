@@ -19,7 +19,7 @@
 >> + ## **OperatorType.java**<br>
 >><details open>
 >> <summary>Enum 클래스에 계산을 진행하는 calculate 추상 메소드를 구현</summary>
-  
+>>
 >>![LV3_OperatorType](https://github.com/user-attachments/assets/dc5bfa95-47f0-4a1e-a815-2111cb8993e4)
 >></details>
 >
