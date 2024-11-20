@@ -40,6 +40,8 @@ public enum OperatorType{
     }
 
     // 3.메서드
+
+    // 입력받은 연산자와 op를 비교해서 일치하면 반환
     public static OperatorType toOperatorType(char operator) {
         for (OperatorType type : values()) {
             if (type.op == operator) {
