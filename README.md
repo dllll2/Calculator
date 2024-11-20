@@ -14,3 +14,5 @@
 >
 >>  + ## **App.java**<br>
 >>  ![LV2_App](https://github.com/user-attachments/assets/7bca3e16-5888-44ed-ba00-3aa3674fc968)
+>
+> ## LV3 Enum, 제네릭, 람다 & 스트림 적용
