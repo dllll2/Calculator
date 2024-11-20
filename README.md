@@ -19,7 +19,7 @@
 >>   ![LV2_Calculator](https://github.com/user-attachments/assets/d29305ad-7592-463e-ab9c-d0c1f03fe25c)
 >>   </details>
 >
->>  <detailss>
+>>  <details>
 >>  <summary>App.java<br></summary>
 >>
 >>  ![LV2_App](https://github.com/user-attachments/assets/7bca3e16-5888-44ed-ba00-3aa3674fc968)
