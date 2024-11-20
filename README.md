@@ -17,8 +17,10 @@
 >
 >> ## LV3 Enum, 제네릭, 람다 & 스트림 적용
 >> + ## **OperatorType.java**<br>
->> Enum 클래스에 계산을 진행하는 calculate 추상 메소드를 구현
+>><details open>
+>> <summary>Enum 클래스에 계산을 진행하는 calculate 추상 메소드를 구현</summary>
 >>![LV3_OperatorType](https://github.com/user-attachments/assets/dc5bfa95-47f0-4a1e-a815-2111cb8993e4)
+>></details>
 >
 >> + ## **ArithmeticCalculator.java**<br>
 >> 람다, 스트림으로 입력받은 값보다 큰수를 출력하는 biggerValue() 메서드 구현
