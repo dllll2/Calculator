@@ -44,6 +44,7 @@
 >> <summary>Enum 클래스에 계산을 진행하는 calculate 추상 메소드를 구현</summary>
 >>
 >>![LV3_abstract_calculate()](https://github.com/user-attachments/assets/8f529efc-fcfb-4436-a7bc-4791bc575f3b)
+>>![LV3_Override_example](https://github.com/user-attachments/assets/1075fed4-f4ab-48ed-9778-3b483ef22171)
 >></details>
 >>  <details>
 >>  <summary>OperatorType.java 전체 코드</summary>
