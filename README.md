@@ -21,7 +21,7 @@
 >
 >> + ## **App.java**<br>
 >>  <details>
->>  <summary></summary>
+>>  <summary>App.java</summary>
 >>
 >>  ![LV2_App](https://github.com/user-attachments/assets/7bca3e16-5888-44ed-ba00-3aa3674fc968)
 >>  </details>
@@ -43,7 +43,7 @@
 >
 >> + ## **App.java**<br>
 >><details>
->><summary></summary>
+>><summary>App.java</summary>
 >>
 >>![LV3_Apppng](https://github.com/user-attachments/assets/469d885f-8607-4e4c-8ac5-f99bf9daaff0)
 >></details>
