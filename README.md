@@ -34,8 +34,14 @@
 >></details>
 >
 >> + ## **ArithmeticCalculator.java**<br>
->> 람다, 스트림으로 입력받은 값보다 큰수를 출력하는 biggerValue() 메서드 구현
+>><details open>
+>> <summary>람다, 스트림으로 입력받은 값보다 큰수를 출력하는 biggerValue() 메서드 구현</summary>
+>>
 >>![LV3_ArithmeticCalculator](https://github.com/user-attachments/assets/1769aea1-aee0-4a02-9ea6-265f2d6b264a)
+>></details>
 >
 >> + ## **App.java**<br>
+>><details>
+>><summary></summary>
 >>![LV3_Apppng](https://github.com/user-attachments/assets/469d885f-8607-4e4c-8ac5-f99bf9daaff0)
+>></details>
