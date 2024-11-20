@@ -26,8 +26,11 @@ public enum OperatorType{
         }
     };
 
+    // 1. 속성(필드)
+    // enum 각 상수에 연관된 char op(연산자)를 저장하는 변수 선언.
     private final char op;
 
+    // 2.생성자
     OperatorType(char op) {
         this.op = op;
     }
@@ -36,6 +39,7 @@ public enum OperatorType{
         return op;
     }
 
+    // 3.메서드
     public static OperatorType toOperatorType(char operator) {
         for (OperatorType type : values()) {
             if (type.op == operator) {
