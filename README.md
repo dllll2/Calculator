@@ -11,6 +11,7 @@
 >>  + ## **Calculator.java**<br>
 >>   <details>
 >>   <summary>calculator() 메소드를 통해서 계산을 진행하고 결과값을 resultList에 저장.<br></summary>
+>>
 >>   ![LV2_calculator()](https://github.com/user-attachments/assets/603e7204-bba8-46ee-93a1-128462526caf)
 >>  </details>
 >>  <details>
