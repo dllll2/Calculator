@@ -4,7 +4,7 @@
 > ![LV1_App](https://github.com/user-attachments/assets/42e1bbb4-bd89-4f47-b38f-60fa1e2925a1)
 
 > ## LV2 클래스를 적용해 기본적인 연산을 수행할 수 있는 계산기
->
+>>
 >> + ## **Calculator.java**<br>
 >>   calculator() 메소드를 통해서 계산을 진행하고 결과값을 resultList에 저장.<br>
 >>   getResultList() getter메소드를 통해서 결과값이 저장된 resultList의 복사본을 반환한다.<br>
